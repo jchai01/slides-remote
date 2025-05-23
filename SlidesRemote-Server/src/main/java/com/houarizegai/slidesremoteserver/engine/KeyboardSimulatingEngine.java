@@ -20,24 +20,31 @@ public class KeyboardSimulatingEngine {
         switch(key) {
             case "NEXT":
                 robot.keyPress(KeyEvent.VK_RIGHT);
+                robot.keyRelease(KeyEvent.VK_RIGHT);
                 break;
             case "PREVIOUS":
                 robot.keyPress(KeyEvent.VK_LEFT);
+                robot.keyRelease(KeyEvent.VK_LEFT);
                 break;
             case "START":
                 robot.keyPress(KeyEvent.VK_F5);
+                robot.keyRelease(KeyEvent.VK_F5);
                 break;
             case "STOP":
                 robot.keyPress(KeyEvent.VK_ESCAPE);
+                robot.keyRelease(KeyEvent.VK_ESCAPE);
                 break;
             case "VOLUME_UP":
                 robot.keyPress(KeyEvent.VK_F3);
+                robot.keyRelease(KeyEvent.VK_F3);
                 break;
             case "VOLUME_DOWN":
                 robot.keyPress(KeyEvent.VK_F2);
+                robot.keyRelease(KeyEvent.VK_F2);
                 break;
             case "VOLUME_MUTE":
                 robot.keyPress(KeyEvent.VK_F1);
+                robot.keyRelease(KeyEvent.VK_F1);
                 break;
         }
 
